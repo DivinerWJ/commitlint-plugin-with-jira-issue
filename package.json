@@ -1,0 +1,15 @@
+{
+  "name": "commitlint-plugin-with-jira-issue",
+  "version": "1.0.1",
+  "description": "校验commit message是否合规",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlintplugin"
+  ],
+  "author": "",
+  "license": "ISC"
+}
