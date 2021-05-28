@@ -2,9 +2,9 @@
  * @Author: wangjie59
  * @Date: 2021-05-26 17:47:03
  * @LastEditors: wangjie59
- * @LastEditTime: 2021-05-28 15:13:41
+ * @LastEditTime: 2021-05-28 15:16:25
  * @Description: _http
- * @FilePath: /weixin/Users/wangjie/Documents/study/test/commitlint-plugin-with-jira-issue/api/_http.js
+ * @FilePath: /weixin/Users/wangjie/Documents/study/github/notes/src/项目工程化/commitlint-plugin-with-jira-issue/api/_http.js
  */
 
 const fetch = require("node-fetch");
@@ -27,7 +27,7 @@ async function checkStatus(response) {
     // window.location = response.headers.get('Location');
   }
 
-  const error = new Error(`status: ${response.status}; statusText: ${response.statusText}`)
+  const error = new Error(`status: ${response.status}; statusText: ${response.statusText}`);
   error.data = await response.json();
   throw error;
 }
