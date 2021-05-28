@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/DivinerWJ/commitlint-plugin-with-jira-issue/compare/v1.1.0...v1.2.0) (2021-05-28)
+
+
+### Features
+
+* README.md ([5665993](https://github.com/DivinerWJ/commitlint-plugin-with-jira-issue/commit/56659931e3f8adca4ebdc54d22ffeecbe44707f6))
+
 ## 1.1.0 (2021-05-28)
 
 
