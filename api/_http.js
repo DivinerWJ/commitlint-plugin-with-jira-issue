@@ -2,9 +2,9 @@
  * @Author: wangjie59
  * @Date: 2021-05-26 17:47:03
  * @LastEditors: wangjie59
- * @LastEditTime: 2021-05-28 15:16:25
+ * @LastEditTime: 2021-06-25 14:35:11
  * @Description: _http
- * @FilePath: /weixin/Users/wangjie/Documents/study/github/notes/src/项目工程化/commitlint-plugin-with-jira-issue/api/_http.js
+ * @FilePath: /study/github/commitlint-plugin-with-jira-issue/api/_http.js
  */
 
 const fetch = require("node-fetch");
@@ -27,9 +27,24 @@ async function checkStatus(response) {
     // window.location = response.headers.get('Location');
   }
 
-  const error = new Error(`status: ${response.status}; statusText: ${response.statusText}`);
-  error.data = await response.json();
-  throw error;
+  let error = {status: response.status, statusText: response.statusText};
+
+  // 'x-authentication-denied-reason': 'CAPTCHA_CHALLENGE; login-url= xxxx'
+  const X_SERAPH_LOGIN_REASON = response.headers.get("X-Seraph-LoginReason");
+  const DENIED_REASON = response.headers.get("X-Authentication-Denied-Reason");
+  if (X_SERAPH_LOGIN_REASON === "AUTHENTICATION_DENIED") {
+    // https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/#captcha
+    error.loginReason = X_SERAPH_LOGIN_REASON;
+    
+    if (DENIED_REASON) {
+      const matchs = DENIED_REASON.match(/(?<=login-url=).*/);
+      if (matchs && matchs.length) {
+        error.please_login = matchs[0];
+      }
+    }
+  }
+
+  throw new Error(JSON.stringify(error));
 }
 
 /**
