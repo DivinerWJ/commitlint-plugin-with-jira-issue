@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/DivinerWJ/commitlint-plugin-with-jira-issue/compare/v1.2.0...v1.2.3) (2022-03-24)
+
+
+### Bug Fixes
+
+* A CAPTCHA is 'triggered' after several consecutive failed log in attempts ([85da862](https://github.com/DivinerWJ/commitlint-plugin-with-jira-issue/commit/85da862edc4ba1d0b6cb28513bf7a36f619179fa))
+* length of none ([c977ad3](https://github.com/DivinerWJ/commitlint-plugin-with-jira-issue/commit/c977ad3e4a1af67f0ba2c47a8dad64cd1d1f97b3))
+
 ## [1.2.0](https://github.com/DivinerWJ/commitlint-plugin-with-jira-issue/compare/v1.1.0...v1.2.0) (2021-05-28)
 
 
