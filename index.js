@@ -2,9 +2,9 @@
  * @Author: wangjie59
  * @Date: 2021-04-28 13:10:20
  * @LastEditors: wangjie59
- * @LastEditTime: 2021-05-28 12:59:30
+ * @LastEditTime: 2022-03-24 11:20:44
  * @Description: index
- * @FilePath: /weixin/Users/wangjie/Documents/study/github/notes/src/项目工程化/commitlint-plugin-with-jira-issue/index.js
+ * @FilePath: /commitlint-plugin-with-jira-issue/index.js
  */
 
 const {
@@ -21,7 +21,7 @@ module.exports = {
       demand,
     }) => {
 
-      const JIRA_REG = new RegExp(`${JIRA_PROJECT}-.*\\s#comment|#ignore_scan#`);
+      const JIRA_REG = new RegExp(`${JIRA_PROJECT}-.*\\x20#comment|#ignore_scan#`);
       if (!JIRA_PROJECT) {
         return [
           false,
