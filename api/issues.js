@@ -1,7 +1,7 @@
 /*
- * @Author: wangjie59
+ * @Author: DivinerWJ
  * @Date: 2021-05-27 17:23:06
- * @LastEditors: wangjie59
+ * @LastEditors: DivinerWJ
  * @LastEditTime: 2021-05-28 12:58:09
  * @Description: issues
  * @FilePath: /weixin/Users/wangjie/Documents/study/github/notes/src/项目工程化/commitlint-plugin-with-jira-issue/api/issues.js

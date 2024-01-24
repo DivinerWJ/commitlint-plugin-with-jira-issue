@@ -1,7 +1,7 @@
 <!--
- * @Author: wangjie59
+ * @Author: DivinerWJ
  * @Date: 2021-04-28 13:08:09
- * @LastEditors: wangjie59
+ * @LastEditors: DivinerWJ
  * @LastEditTime: 2022-03-24 12:37:33
  * @Description: readme
  * @FilePath: /commitlint-plugin-with-jira-issue/README.md

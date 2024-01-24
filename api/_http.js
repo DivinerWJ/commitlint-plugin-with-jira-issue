@@ -1,7 +1,7 @@
 /*
- * @Author: wangjie59
+ * @Author: DivinerWJ
  * @Date: 2021-05-26 17:47:03
- * @LastEditors: wangjie59
+ * @LastEditors: DivinerWJ
  * @LastEditTime: 2021-06-25 14:35:11
  * @Description: _http
  * @FilePath: /study/github/commitlint-plugin-with-jira-issue/api/_http.js

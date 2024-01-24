@@ -1,8 +1,8 @@
 /*
- * @Author: wangjie59
+ * @Author: DivinerWJ
  * @Date: 2021-04-28 13:10:20
- * @LastEditors: wangjie59
- * @LastEditTime: 2022-03-24 11:20:44
+ * @LastEditors: DivinerWJ
+ * @LastEditTime: 2024-01-24 16:34:48
  * @Description: index
  * @FilePath: /commitlint-plugin-with-jira-issue/index.js
  */
