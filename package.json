@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-with-jira-issue",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "校验commit message是否合规",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,10 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.1"
-  }
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "api"
+  ]
 }
